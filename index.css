@@ -112,6 +112,11 @@ body {
   margin-left: -20px;
 }
 
+.link {
+  -webkit-tap-highlight-color: transparent; /* Для WebKit-браузеров (Chrome, Safari) */
+
+  outline: none; /* Убирает контур при фокусе для десктопов */
+}
 /* .map__path {
   fill: #ccc;
   transition: 0.3s;
