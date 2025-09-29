@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+}
+
+.map__container {
+  position: relative;
+
+  width: 780px;
+  height: 750px;
+  border: 5px solid red;
+  display: flex;
+}
+
+.map__block {
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  pointer-events: none;
+}
+
+.map__block--chunk1 {
+  left: 0;
+  top: 220px;
+}
+
+.map__block--chunk2 {
+  left: 100px;
+  top: 100px;
+}
+
+.map__block--chunk3 {
+  left: 310px;
+  top: 50px;
+}
+
+.map__block--chunk4 {
+  left: 410px;
+  top: 250px;
+}
+
+.map__block--chunk5 {
+  left: 260px;
+  top: 380px;
+}
+
+.map__chunk {
+  width: inherit;
+  height: inherit;
+}
+
+.map__path {
+  fill: #ccc;
+  transition: 0.3s;
+  transform: scale(0.85);
+  transform-origin: center;
+  pointer-events: visiblePainted;
+}
+
+.map__path:hover {
+  fill: #ddd;
+  cursor: pointer;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.map__title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #2b2a2a;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
