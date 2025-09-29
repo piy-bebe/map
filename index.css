@@ -16,7 +16,7 @@ body {
 
   width: 780px;
   height: 750px;
-  border: 5px solid red;
+
   display: flex;
 }
 
@@ -56,26 +56,6 @@ body {
   top: 380px;
 }
 
-.map__chunk {
-  width: inherit;
-  height: inherit;
-}
-
-.map__path {
-  fill: #ccc;
-  transition: 0.3s;
-  transform: scale(0.85);
-  transform-origin: center;
-  pointer-events: visiblePainted;
-}
-
-.map__path:hover {
-  fill: #ddd;
-  cursor: pointer;
-  transform: scale(0.95);
-  cursor: pointer;
-}
-
 .map__title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #2b2a2a;
@@ -88,3 +68,59 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+
+.map__procent {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #2b2a2a;
+  font-size: 16px;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%, -57%);
+  pointer-events: none;
+}
+
+.map__chunk {
+  width: inherit;
+  height: inherit;
+  pointer-events: none;
+}
+
+.map__background {
+  fill: #ccc;
+}
+
+.map__success {
+  fill: rgb(112, 255, 83);
+}
+
+.map__svg-group {
+  transform-origin: center;
+  transition: 0.3s;
+  transform: scale(0.87);
+  pointer-events: visiblePainted;
+}
+
+.map__svg-group:hover {
+  transform: scale(0.97);
+}
+
+.a {
+  margin-top: -30px;
+  margin-left: -20px;
+}
+
+/* .map__path {
+  fill: #ccc;
+  transition: 0.3s;
+  transform: scale(0.85);
+  transform-origin: center;
+}
+
+.map__path:hover {
+  fill: #ddd;
+  cursor: pointer;
+  transform: scale(0.95);
+} */
